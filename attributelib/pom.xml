@@ -32,12 +32,6 @@
 			<version>LATEST</version>
 			<type>jar</type>
 		</dependency>
-		<dependency>
-			<groupId>com.github.thebiologist13</groupId>
-			<artifactId>customspawners</artifactId>
-			<version>0.5</version>
-			<type>jar</type>
-		</dependency>
 	</dependencies>
 
 	<build>
