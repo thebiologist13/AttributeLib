@@ -1,9 +1,12 @@
 package com.github.thebiologist13.attributelib;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Modifier {
+public class Modifier implements Serializable {
 
+	private static final long serialVersionUID = 7771796547535194273L;
+	
 	private double amount;
 	private UUID id;
 	private String name;

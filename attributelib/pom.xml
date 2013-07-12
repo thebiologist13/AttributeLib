@@ -8,6 +8,10 @@
 	<packaging>jar</packaging>
 	<name>attributelib</name>
 
+	<properties>
+	    <bukkit.version>1.6.2-R0.1-SNAPSHOT</bukkit.version>
+	</properties>
+	
 	<repositories>
 		<repository>
 			<id>bukkit-repo</id>
@@ -23,13 +27,13 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>LATEST</version>
+			<version>${bukkit.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>craftbukkit</artifactId>
-			<version>LATEST</version>
+			<version>${bukkit.version}</version>
 			<type>jar</type>
 		</dependency>
 	</dependencies>

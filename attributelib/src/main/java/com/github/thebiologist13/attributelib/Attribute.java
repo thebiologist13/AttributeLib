@@ -1,10 +1,13 @@
 package com.github.thebiologist13.attributelib;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Attribute {
+public class Attribute implements Serializable {
 
+	private static final long serialVersionUID = 7131150007489438852L;
+	
 	private VanillaAttribute attribute;
 	private double base;
 	private List<Modifier> modifiers = new ArrayList<Modifier>();

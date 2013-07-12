@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import net.minecraft.server.v1_6_R1.NBTBase;
-import net.minecraft.server.v1_6_R1.NBTTagCompound;
-import net.minecraft.server.v1_6_R1.NBTTagList;
+import net.minecraft.server.v1_6_R2.NBTBase;
+import net.minecraft.server.v1_6_R2.NBTTagCompound;
+import net.minecraft.server.v1_6_R2.NBTTagList;
 
-import org.bukkit.craftbukkit.v1_6_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_6_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 
@@ -107,7 +107,7 @@ public class AttributeLib {
 		if(!(entity instanceof LivingEntity))
 			return null;
 		
-		net.minecraft.server.v1_6_R1.Entity nms = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_6_R2.Entity nms = ((CraftEntity) entity).getHandle();
 		nms.e(compound);
 		return compound;
 	}
@@ -116,7 +116,7 @@ public class AttributeLib {
 		NBTTagCompound allNBT = getEntityNBT(entity);
 		allNBT.set("Attributes", nbt);
 		
-		net.minecraft.server.v1_6_R1.Entity nms = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_6_R2.Entity nms = ((CraftEntity) entity).getHandle();
 		Class<?> entityClass = nms.getClass();
 		Method[] methods = entityClass.getMethods();
 		for (Method method : methods) {
