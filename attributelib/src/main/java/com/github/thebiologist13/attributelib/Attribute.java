@@ -46,7 +46,7 @@ public class Attribute implements Serializable {
 		double max = attribute.getMaximum();
 		if(base < min)
 			base = min;
-		else if(base > max)
+		else if(base > max && max != -1)
 			base = max;
 		this.base = base;
 	}
